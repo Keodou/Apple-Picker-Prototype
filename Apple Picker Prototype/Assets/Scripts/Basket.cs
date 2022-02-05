@@ -36,6 +36,7 @@ public class Basket : MonoBehaviour
             int score = int.Parse(scoreGT.text);
             score += 100;
             scoreGT.text = score.ToString();
+            Score.currentScore = score;
 
             if (score > HighScore.score)
             {
